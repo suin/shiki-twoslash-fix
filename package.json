@@ -1,6 +1,6 @@
 {
   "name": "shiki-twoslash-fix",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "A workaround for Shiki's Twoslash transformer that fixes misaligned code annotations and positioning issues",
   "keywords": [
     "shiki",
