@@ -1,0 +1,52 @@
+{
+  "name": "shiki-twoslash-fix",
+  "version": "1.0.0-alpha.1",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/suin/shiki-twoslash-fix#readme",
+  "bugs": {
+    "url": "https://github.com/suin/shiki-twoslash-fix/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suin/shiki-twoslash-fix.git"
+  },
+  "license": "MIT",
+  "author": "suin",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./js/index.d.ts",
+      "import": "./js/index.js",
+      "require": "./js/index.js"
+    }
+  },
+  "main": "./js/index.js",
+  "module": "./js/index.js",
+  "types": "./js/index.d.ts",
+  "files": [
+    "js/**/*",
+    "ts/**/*",
+    "!ts/**/*.test.*",
+    "!ts/**/*.spec.*",
+    "!ts/**/__tests__/*"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rm -rf js *.tsbuildinfo",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@tsconfig/bun": "*",
+    "@tsconfig/node22": "*",
+    "@tsconfig/strictest": "*",
+    "@types/bun": "^1.2.17",
+    "hast-util-to-text": "^4.0.2",
+    "shiki": "^3.7.0",
+    "typescript": "*"
+  },
+  "peerDependencies": {
+    "@shikijs/twoslash": "^3.7.0",
+    "twoslash": "^0.3.1"
+  }
+}
